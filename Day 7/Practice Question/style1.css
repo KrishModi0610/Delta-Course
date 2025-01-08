@@ -1,0 +1,39 @@
+#outer {
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+.inner {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#outer > .inner {
+    background-color: red;
+}
+
+#outer > .inner + .inner {
+    background-color: yellow;
+}
+
+#outer > .inner + .inner + .inner {
+    background-color: green;
+}
+
+.out {
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+}
+
+.inn {
+    height: 50px;
+    width: 50px;
+    background-color: wheat;
+    padding: 10%;
+    margin-top: 10%;
+}
